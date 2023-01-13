@@ -1,0 +1,50 @@
+Alguns conceitos importantes:
+
+Branch: É o caminho usado para enviar os arquivos.
+O branch principal geralmente chamamos de Master (seria o de produção).
+O branch secundário geralmente chamamos de main (seria o que entendemos por homologação).
+
+git checkout: escolhe a branch que sera utilizada. 
+Ex: git checkout master
+
+_____________________________________________________________
+
+MERGE  (unir código da branch temporária com a branch principal)
+
+Antes de fazer o merge, faça o git pull(atualiza o repositório local com o que ta em nuvem), para evitar atualizar um código desatualizado, trabalhando assim no que é mais recente.
+
+
+# O que você deve fazer quando for trabalhar com o git.
+1. git pull na branch principal, assim, os seus dados locais estarão com as mesmas atualizações do repositório em nuvem.
+2. Gerar uma nova branch apartir da principal (você vai poder editar sem afetar os dados de produção).
+Ex: git checkout master (você vai mudar para a master)
+Ex: git checkout -b testes (vai criar uma branch chamada teste, baseada na principal)
+3. Fazer as edições que forem necessárias na branch temporária
+4. git checkout na branch principal
+5. git pull
+6. mergiar
+7 git push na branch principal 
+
+
+
+# Comandos diversos 
+
+Git status = relatório quais arquivos já foram incluídos, atualizados ou não incluídos. (commit)
+Git add “nome do arquivo” = adicionar o arquivo ao controle de versionamento.
+Git add .   = adicionar todos os arquivos da pasta para o controle de versão.
+Git commit -m “commit inicial” = Gera a primeira versão do código, entra “” você deve informar o que é aquela versão, ex : commit inicial, atualização da interface, correção de falha.
+Git push = enviar as alterações para o servidor do git hub.
+Git remote add origin https://github.com/ig-tecnologia/Projeto1  (adiciona o reposótio git hub ao git) 
+Git push –set-upstream origin master = enviar alterações para o repositório do git hubadd
+Git reflog = histórico de commit 
+Git reset --hard (escreva o hash obtido no git reflog)   = voltar ao código anterior (útil para reverter erros).
+Git pull = atualiza o seu pc com os dados da branch que estão no git hub
+
+Git ignore = seleciona pasta ou arquivos que você não quer enviar para o seu repositório.
+Touch .gitignore  (cria um arquivo de texto, e lá você põem o nome do arquivo para não enviar.)
+
+
+$ git config --global user.email gustavo1995_4@hotmail.com
+$ git config --global user.name ig-tecnologia
+
+git init
