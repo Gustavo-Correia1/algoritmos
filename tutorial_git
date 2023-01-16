@@ -2,7 +2,7 @@ Alguns conceitos importantes:
 
 Branch: É o caminho usado para enviar os arquivos.
 O branch principal geralmente chamamos de Master (seria o de produção).
-O branch secundário geralmente chamamos de main (seria o que entendemos por homologação).
+O branch secundário geralmente chamamos de main (A principal, seria o que entendemos por homologação).
 
 git checkout: escolhe a branch que sera utilizada. 
 Ex: git checkout master
@@ -44,11 +44,19 @@ Git ignore = seleciona pasta ou arquivos que você não quer enviar para o seu r
 Touch .gitignore  (cria um arquivo de texto, e lá você põem o nome do arquivo para não enviar.)
 
 
+
+Passo a passo
+Adicione a sua conta git 
+
 $ git config --global user.email gustavo1995_4@hotmail.com
 $ git config --global user.name ig-tecnologia
 
 git init
+<<<<<<< HEAD
 
 
 git push cssu main (sobe a nova branch main, no repositório cssu)
 git checkout -b main (cria a branch main)
+=======
+git add "nome pasta ou arquivo"
+>>>>>>> master
