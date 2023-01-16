@@ -58,3 +58,4 @@ git push cssu main (sobe a nova branch main, no repositório cssu)
 git checkout -b main (cria a branch main)
 git add "nome pasta ou arquivo"
 
+#Verificação
