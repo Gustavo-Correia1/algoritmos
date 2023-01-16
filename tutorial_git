@@ -51,12 +51,10 @@ Adicione a sua conta git
 $ git config --global user.email gustavo1995_4@hotmail.com
 $ git config --global user.name ig-tecnologia
 
-git init
-<<<<<<< HEAD
+
 
 
 git push cssu main (sobe a nova branch main, no repositório cssu)
 git checkout -b main (cria a branch main)
-=======
 git add "nome pasta ou arquivo"
->>>>>>> master
+
